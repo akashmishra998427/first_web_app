@@ -13,18 +13,31 @@
 
             <h2>this is my frist page of asp.net framework </h2>
 
-       </div>
-        <%-- learning razer syntax in asp.net // or inline coding --%>
-       <div>
+      </div>
+        <div class="second">
 
-           <%Response.Write("Server Date: " + DateTime.Now.ToShortDateString()); %>>
-           <br />
-            <br />
-            <%Response.Write("Server Date: " + DateTime.Now.ToShortDateString()); %>
+          <%--  learning how normal html and asp.net server side controls are working--%>
 
-            <br />
-            <br />
-            <% Response.Write("hii this is code inline"); %>
+            <p>HTML control</p>
+           <%-- these controls will loss their data--%>
+            <br/>
+            Enter name:
+            <input type="text" name="text1" id="text1"/>
+            <input type="submit" name="btnsubmit1" value="save" id="btnsubmit1">
+
+            <br/>
+            <br/>
+             <%--these colnrols will not be loss thrir datas--%>
+            <p>asp.net server control</p>
+
+            Enter Name:
+            <asp:TextBox ID="TextBox1" runat="server" Class="second"></asp:TextBox>
+            <asp:Button ID="Button1" runat="server" Text="Button" Class="second" />
+
+            <%--the asp server side controls assosited with three things
+            (1) prpperties
+            (2)methods
+            (3)Events--%>
         </div>
     </form>
 </body>
