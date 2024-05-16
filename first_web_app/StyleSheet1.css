@@ -1,0 +1,9 @@
+﻿body {
+    padding:0;
+  margin:0;  
+  box-sizing:border-box;
+}
+.first{
+    height:150px;
+    border:2px solid green;
+}
